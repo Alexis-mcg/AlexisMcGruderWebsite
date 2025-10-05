@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Alexis McGruder</h1>
+</header>
+
+<nav>
+  <a href="index.html">About Me</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="cv.html">Curriculum Vitae</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a recent graduate from Kennesaw State University with a Bachelor’s degree in Software Engineering and a 
+    minor in Computer Science, and I am currently pursuing my Master’s degree in Artificial Intelligence. 
+    My experiences have given me a strong foundation in system design, software testing, and application development.
+  </p>
+  <p> I bring proven leadership skills through my role as a Graduate Professional Assistant at KSU and from leading teams 
+    in academic and professional settings. I also gained professional experience through an internship at Northrop Grumman, 
+    where I contributed to automation, testing, and building software tools that streamlined engineering processes, 
+    while maintaining a <strong>secret level security clearance</strong>.
+  </p>
+  <p>I am eager to join a company that values growth and innovation, where I can continue learning while making 
+    a real impact. I am dedicated not only to delivering high-quality work but also to helping the 
+    organization grow and succeed. With my passion for technology, leadership experience, and commitment 
+    to continuous learning, I am ready to contribute meaningfully and give my all in the next step of my career.
+  </p>
+
+
+
+  <div class="button-group">
+    <button class="toggle-btn active-btn" data-section="experience">Relevant Experience</button>
+    <button class="toggle-btn" data-section="education">Education</button>
+    <button class="toggle-btn" data-section="skills">Skills</button>
+  </div>
+  
+  <div id="content-box" class="toggle-content"></div>
+
+<footer>
+  <p>© 2025 Alexis McGruder. Excited to create and grow together!</p>
+</footer>
+
+<script>
+  const sectionsContent = {
+  experience: `
+      <h2 style="text-align: center;">Relevant Experience</h2>
+      <div class="job">
+          <h3>Software Engineering Intern <span class="company">Northrop Grumman</span></h3>
+          <p class="date">May 2024 – July 2024</p>
+          <p class="clearance">Secret Level Security Clearance</p>
+          <ul>
+            <li>Developed a C# WPF application that parsed plain-language documents and converted them into structured testing files using C3, enabling the testing team to efficiently generate B-1 Bomber test cases and reduce manual workload.</li>
+            <li>Built a application allowing hardware engineers to upload large, complex result documents and utilized regex to extract critical data and automatically generate CSV reports, making previously hard-to-read results accessible and saving engineers significant time.</li>
+            <li>Design and facilitate workshops on life skills, financial literacy, career development, and personal growth, empowering students to succeed both academically and professionally.</li>
+        </div>
+      
+        <div class="job">
+          <h3>Graduate Professional Assistant <span class="company">Kennesaw State University</span></h3>
+          <p class="date">August 2025 – Present</p>
+          <ul>
+            <li>Directly mentor 12 students with lived experiences in foster care, homelessness, or other backgrounds, while providing support to a broader cohort of 60+ students in the program.</li>
+            <li>Collaborate with faculty and staff to improve program initiatives, implement new support strategies, and maintain a safe, inclusive, and supportive learning environment.</li>
+            <li>Develop and facilitate educational and life skills workshops on financial literacy, career readiness, and personal growth while balancing full-time AI Master’s coursework, showcasing dedication, focus, and effective time management.</li>
+          </ul>
+        </div>
+      
+      <div class="job">
+          <h3>Community Assistant <span class="company">Kennesaw State University</span></h3>
+          <p class="date">July 2024 – May 2025</p>
+          <ul>
+            <li>Led a team of 22 Resident Assistants while overseeing operations for a residence hall housing 300+ students, providing direct mentorship to leaders and support to residents.</li>
+            <li>Served as the liaison between Resident Assistants and the Community Coordinator, ensuring smooth communication, timely problem-solving, and effective execution of residence life policies.</li>
+            <li>Developed and executed large-scale programs and initiatives that promoted student engagement, leadership development, and community building.</li>
+          </ul>
+        </div>
+  `,
+
+
+
+
+  education: `
+    <h2 style="text-align: center;">Education</h2>
+
+<div class="education-entry">
+  <h3>Master of Science in Artificial Intelligence <span class="school">Kennesaw State University</span></h3>
+  <p class="date">August 2025 – Present</p>
+  <p><strong>GPA:</strong> -- </p>
+  <p><strong>Relevant Coursework:</strong> Machine Learning, Natural Language Processing, Artificial Intelligence, AI Ethics</p>
+  <p><strong>Clubs & Involvement:</strong> National Society of Black Engineers (NSBE), ColorStack</p>
+  
+</div>
+
+<div class="education-entry">
+  <h3>Bachelor of Science in Software Engineering, Minor in Computer Science <span class="school">Kennesaw State University</span></h3>
+  <p class="date">August 2021 – May 2025</p>
+  <p><strong>GPA:</strong> 3.4</p>
+  <p><strong>Relevant Coursework:</strong> Data Structures, Database Systems, Operating Systems, Software Testing & QA, User Centered Design, Software Project Management, Unser Interface Engineering, Technical Writing</p>
+  <p><strong>Clubs & Involvement:</strong> Hackathon participant, Residant Assitant and Community Assistant leadership roles</p>
+  <p><strong>Achievements:</strong> Learning Program of the Year (2025 Golden Feathers Awards), RA of the Year (2024 Golden Feathers Awards), 2023 Hackathon 3rd Place Winner </p>
+</div>
+
+<div class="education-entry">
+  <h3>High School Diploma <span class="school">Flowery Branch High School</span></h3>
+  <p class="date">August 2017 - May 2021</p>
+  <p><strong>GPA:</strong> 3.8</p>
+  <p><strong>Relevant Coursework:</strong> Intro Computer Science</p>
+  <p><strong>Clubs & Involvement:</strong> Key Club, Track & Field, Volleyball, Basketball</p>
+  <p><strong>Achievements:</strong> 3rd Place Shot-Put State Quialifier, Throwing Captain, JV-Basketball Capatain</p>
+</div>
+
+  `,
+  skills: `
+  <h2 style="text-align: center;">Skills</h2>
+
+<p><strong>Programming & Frameworks:</strong> Java, C#, WPF, HTML, CSS, JavaScript, Python, Dart (Flutter)</p>
+<p><strong>Databases & Tools:</strong> SQL, Firebase, Git, Jira, Agile </p>
+<p><strong>Professional Skills:</strong> Leadership, Communication, Teamwork, Problem-Solving, Adaptability, Time Management, Personable</p>
+<p><strong>Other:</strong> Secret Level Security Clearance</p>
+  `
+};
+
+// Function to display selected section
+function displaySection(section) {
+  const contentBox = document.getElementById("content-box");
+  contentBox.innerHTML = sectionsContent[section];
+}
+
+// Event listener for all buttons
+document.querySelectorAll(".toggle-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    // Remove active class from all buttons
+    document.querySelectorAll(".toggle-btn").forEach(btn => btn.classList.remove("active-btn"));
+    // Add active class to clicked button
+    button.classList.add("active-btn");
+
+    // Display the selected section
+    const section = button.getAttribute("data-section");
+    displaySection(section);
+  });
+});
+
+// Load experience by default on page load
+window.addEventListener("DOMContentLoaded", () => displaySection("experience"));
+</script>
+
+</body>
+</html>

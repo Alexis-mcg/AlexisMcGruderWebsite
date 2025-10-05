@@ -1,0 +1,256 @@
+/* -------------------
+   General Styles
+------------------- */
+body {
+  font-family: 'Gill Sans', sans-serif;
+  margin: 0;
+  background: #F6F5F7; /* soft lavender-gray */
+  color: #333;
+}
+
+header {
+  background: #554971; /* muted purple */
+  color: #FFFFFF; /* white text */
+  text-align: center;
+  padding: 1rem;
+  font-size: xx-large;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #282828; /* dark neutral */
+  font-size: larger;
+}
+
+nav a {
+  color: #EFE9E1; /* cream/light text */
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #CF8BA3; /* soft pink */
+  color: #23B5D3; /* subtle blue on hover for contrast */
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background: #EFE9E1; /* soft cream */
+  border-radius: 8px;
+}
+
+h2 {
+  border-bottom: 2px solid #CF8BA3; /* soft pink underline */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #554971; /* muted purple */
+  text-align: center;
+}
+
+/* -------------------
+   Toggle Buttons
+------------------- */
+.button-group {
+  margin: 1rem 0;
+}
+
+.toggle-btn {
+  background: #CF8BA3; /* soft pink */
+  color: #554971; /* muted purple text */
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #23B5D3; /* soft blue hover for a hint of contrast */
+  color: #FFFFFF;
+}
+
+.active-btn {
+  background: #554971; /* muted purple */
+  color: #FFFFFF;
+}
+
+.toggle-content {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #FFFFFF; /* white content background */
+  border-radius: 8px;
+}
+
+.toggle-content p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* -------------------
+   Experience Section
+------------------- */
+.experience-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.job {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #554971; /* purple heading for each job */
+}
+
+.job .company {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #CF8BA3; /* pink accent for company */
+  margin-left: 0.5rem;
+}
+
+.job .date {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  margin: 0.3rem 0 0.8rem;
+}
+
+.job .clearance {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #23B5D3; /* subtle blue accent for clearance text */
+  margin-bottom: 0.5rem;
+}
+
+.job ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.job ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* -------------------
+   Education Section
+------------------- */
+.education-entry {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.education-entry h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #554971; /* purple heading */
+}
+
+.education-entry .school {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #CF8BA3; /* pink accent */
+  margin-left: 0.5rem;
+}
+
+.education-entry .date {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #23B5D3; /* subtle blue */
+  margin: 0.3rem 0 0.8rem;
+}
+
+.education-entry ul {
+  padding-left: 1.2rem;
+  line-height: 1.5;
+}
+
+.education-entry ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* -------------------
+   Projects
+------------------- */
+.project {
+  background: #FFFFFF; /* white background for projects */
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(85, 73, 113, 0.1); /* subtle purple shadow */
+}
+
+.project h3 {
+  color: #554971; /* purple headings */
+}
+
+.project p, .project ul {
+  color: #333;
+}
+
+.project-images {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-images img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* single image for larger screenshots */
+.project-images img.single-image {
+  width: 300px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* -------------------
+   Contact
+------------------- */
+#contact p {
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.contact-details p {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.contact-details a {
+  color: #23B5D3; /* subtle blue links */
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: #CF8BA3; /* pink hover */
+}
+
+/* -------------------
+   Footer
+------------------- */
+footer {
+  background: #554971; /* purple footer */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
